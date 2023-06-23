@@ -1,3 +1,164 @@
+
+.editmail{
+  display:flex;
+  align-items: center;
+  flex-direction: column;
+  
+}
+.mailsetup{
+  display: inline-block;
+  width:1000px;
+  align-items: center;
+  flex-direction:row;
+  flex-wrap: wrap;
+
+}
+.texteditor{
+  height:300px;
+  width:800px;
+  margin-left:300px;
+  justify-content:center;
+  margin-top:10px;
+}
+.footer{
+  display: flex;
+  align-items: center;
+  justify-content:space-evenly;
+  margin-left:500px;
+  margin-right: 400px;
+  margin-top: 60px;
+  margin-bottom: 30px;
+}
+
+
+
+/* Navbar css */
+nav{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  background: #1b2430;
+  padding:1px 30px;
+  height:60px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.06);
+}
+
+#navbar{
+  display: flex;
+  align-items:center;
+  justify-content:center;
+
+}
+#navbar li{
+  list-style: none;
+  padding:0 20px;
+  position:relative;
+}
+#navbar li a {
+  text-decoration: none;
+  font-size: 1.3rem;
+  font-weight: 600;
+  color:#fff;
+  transition:0.3s ease-in-out ;
+
+}
+#navbsr li a:hover,
+#navbar li a.active{
+  color:#17cf97
+}
+#navbar li a:hover::after,
+#navbar li a.active::after{
+  content: "";
+  width: 30%;
+  height:2px;
+  background:#17cf97 ;
+  position:absolute;
+  bottom:-4px;
+  left:20px;
+}
+#mobile i{
+  color:#fff;
+}
+#mobile i{
+  display:none;
+}
+@media screen and (max-width:375px){ 
+   .fromTo{
+  margin:0 0 0 250px;
+}}
+@media screen and (max-width:700px){ 
+  .fromTo{
+ margin:0 0 0 250px;
+}}
+
+@media screen and (max-width:1000px){
+  .texteditor{
+    height:300px;
+    width:800px;
+    margin-left:0px;
+    justify-content:center;
+    margin-top:10px;
+  }
+
+  .footer{
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly;
+    margin-left:0px;
+    margin-right:0px;
+    margin-top: 60px;
+    margin-bottom: 30px;
+}
+}
+@media screen and (max-width:769px){
+  .texteditor{
+    height:300px;
+    width:800px;
+    margin-left:0px;
+    justify-content:center;
+    margin-top:10px;
+  }
+
+  .footer{
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly;
+    margin-left:0px;
+    margin-right:0px;
+    margin-top: 60px;
+    margin-bottom: 30px;
+  }
+  #navbar{
+    display: flex;
+    align-items:flex-start;
+    justify-content:flex-start;
+    flex-direction: column;
+    position:fixed;
+    top:90px;
+    right:-330px;
+    width:300px;
+    height:100vh;
+    background:#2a3239 ;
+    box-shadow:0 40px 60px rgba(0,0,0,0.1);
+    padding:40px 0 0 10px;
+    transition: 0.3s ease-in-out;
+  }
+  #navbar.active{
+    right:0px;
+  }
+  #mobile i{
+    display:block;
+  }
+  #navbar li{
+    margin-bottom:25px ;
+  }
+  #mobile i{
+    font-size:24px;
+    cursor:pointer;
+  }
+}
+
+/* this below is default */
 .App {
   text-align: center;
 }
